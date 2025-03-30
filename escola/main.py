@@ -23,3 +23,17 @@ aprovados = []
 recuperacao = []
 reprovados = []
 
+# Classifica os alunos com base em suas médias
+
+for nome, media in alunos.items():
+    if media > 7:
+        aprovados.append(nome)
+    elif 5 <= media < 7:
+        recuperacao.append(nome)
+    else:
+        reprovados.append(nome)
+
+# Solicita que o usuario adicione o nome para verificar a situação.
+
+nome_aluno = input("Digite o nome do aluno para verficar a situação: ")
+
