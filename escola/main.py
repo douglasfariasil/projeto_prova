@@ -37,3 +37,14 @@ for nome, media in alunos.items():
 
 nome_aluno = input("Digite o nome do aluno para verficar a situação: ")
 
+# Verifica em qual lista o aluno se encontra
+
+if nome_aluno in aprovados:
+    print(f"{nome_aluno} está aprovado(a).")
+elif nome_aluno in recuperacao:
+    print(f"{nome_aluno} está em recupetação.")
+elif nome_aluno in reprovados:
+    print(f"{nome_aluno} está reprovado(a).")
+else:
+    print(f"{nome_aluno} não encotrado(a) na lista de aluno.")
+
